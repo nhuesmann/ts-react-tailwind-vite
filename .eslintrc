@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "universe/web",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["tailwindcss", "simple-import-sort"],
+  "rules": {
+    // ? Needed for simple-import-sort
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "sort-imports": "off",
+    "import/order": "off",
+    "tailwindcss/no-custom-classname": [1, {
+      "config": "tailwind.config.cjs"
+    }]
+  }
+}
