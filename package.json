@@ -21,8 +21,11 @@
     "dev": "concurrently -n tsc,build,vite 'npm:tsc:watch' 'npm:build:watch' 'npx vite'"
   },
   "dependencies": {
+    "@iconify/react": "^4.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hooks-global-state": "^2.1.0",
+    "react-select": "^5.7.0"
   },
   "devDependencies": {
     "@figma/plugin-typings": "^1.57.1",

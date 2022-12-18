@@ -1,3 +1,5 @@
+import './reset.css';
+import './loader.css';
 import './index.css';
 
 import React from 'react';

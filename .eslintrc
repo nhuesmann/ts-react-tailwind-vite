@@ -26,8 +26,17 @@
     "import/no-duplicates": "error",
     "sort-imports": "off",
     "import/order": "off",
+    // Additional rules
     "tailwindcss/no-custom-classname": [1, {
       "config": "tailwind.config.cjs"
+    }],
+    "react/jsx-boolean-value": ["error", "always"],
+    "react/self-closing-comp": ["off"],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", {
+      "argsIgnorePattern": "^_",
+      "varsIgnorePattern": "^_",
+      "caughtErrorsIgnorePattern": "^_"
     }]
   }
 }
